@@ -440,10 +440,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/bluebird@npm:^3":
+"@types/bluebird@npm:*, @types/bluebird@npm:^3":
   version: 3.5.36
   resolution: "@types/bluebird@npm:3.5.36"
   checksum: af22086cd4db88c8d733b9d7781c26849f5e7c10fc6edea2682bc707669b27d4571fa8d09cd23a54baea6a28f76c9cfdad9c38ab80402bf9086d35f150d18015
+  languageName: node
+  linkType: hard
+
+"@types/caseless@npm:*":
+  version: 0.12.2
+  resolution: "@types/caseless@npm:0.12.2"
+  checksum: 14a24bcf3da48b93ddae273601954e4d07d2f7886ca600c91fa005645b3cd1a89034e7b0ad3b8ba10d029b4b76210db93437d937ee618b0891b0d8ca4c127801
   languageName: node
   linkType: hard
 
@@ -498,6 +505,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/request-promise@npm:^4":
+  version: 4.1.48
+  resolution: "@types/request-promise@npm:4.1.48"
+  dependencies:
+    "@types/bluebird": "*"
+    "@types/request": "*"
+  checksum: 6da6d188b16445f28f89e6d5603b16b6c101ff2697ff073c129ad4fe46f3f7cb7188388100db6c224972bd5d89bc3b11a5acb8f701750d62669ce9da2c8f4e18
+  languageName: node
+  linkType: hard
+
+"@types/request@npm:*":
+  version: 2.48.7
+  resolution: "@types/request@npm:2.48.7"
+  dependencies:
+    "@types/caseless": "*"
+    "@types/node": "*"
+    "@types/tough-cookie": "*"
+    form-data: ^2.5.0
+  checksum: 6295dadd2bff948fc6516df0f22249316c2ce94ac88dcabbca32c73d79eaddede7523e6e49b7c048c7beeb666d7dac85e4a3ec0d6813fdf5729c4141807387ff
+  languageName: node
+  linkType: hard
+
 "@types/responselike@npm:^1.0.0":
   version: 1.0.0
   resolution: "@types/responselike@npm:1.0.0"
@@ -513,6 +542,13 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: 876b6d8414028620a20dcb668a31412ed9b45739c272d390e20e0ba6180e039e65483c72a2fe7f9f0f8d6a51f18191e3e35b2d704d8554d92d5ecd5116f1c984
+  languageName: node
+  linkType: hard
+
+"@types/tough-cookie@npm:*":
+  version: 4.0.1
+  resolution: "@types/tough-cookie@npm:4.0.1"
+  checksum: 141f46d046dde0864a9b9d3a3315a300b406af63853bf8940b1d423506fd2f4f6a9910a7fdf9f4b0ef641c0a1e8404a8f3713613a39f76728783987cbf19078f
   languageName: node
   linkType: hard
 
@@ -970,7 +1006,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bfx-api-node-models@npm:^1.3.1, bfx-api-node-models@npm:^1.4.0":
+"bfx-api-node-models@npm:^1.3.1, bfx-api-node-models@npm:^1.4.0, bfx-api-node-models@npm:^1.5.0":
   version: 1.5.0
   resolution: "bfx-api-node-models@npm:1.5.0"
   dependencies:
@@ -3070,6 +3106,17 @@ __metadata:
   version: 0.6.1
   resolution: "forever-agent@npm:0.6.1"
   checksum: a9ce6ae01b494d3ca0f83e45cb187de52eaf65de2ee58eb6918c3a835a89372dafe3226c1df7c636d2609885baff6e705caa346094bf630c4161680018562c46
+  languageName: node
+  linkType: hard
+
+"form-data@npm:^2.5.0":
+  version: 2.5.1
+  resolution: "form-data@npm:2.5.1"
+  dependencies:
+    asynckit: ^0.4.0
+    combined-stream: ^1.0.6
+    mime-types: ^2.1.12
+  checksum: 35e1a6eec379ea40545cd0d8f2a435e8d142b747721df42200bcc236d3aba10716b26f6e6d24e7563a6d5d7d9d556453f8139d606c9a1e92ee17cae5becdc8f0
   languageName: node
   linkType: hard
 
@@ -6353,7 +6400,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"request-promise@npm:^4.2.0":
+"request-promise@npm:^4.2.0, request-promise@npm:^4.2.6":
   version: 4.2.6
   resolution: "request-promise@npm:4.2.6"
   dependencies:
@@ -7675,9 +7722,11 @@ __metadata:
   resolution: "vw-crypto-stats@workspace:."
   dependencies:
     "@types/bluebird": ^3
+    "@types/request-promise": ^4
     "@types/signale": ^1
     "@types/update-notifier": ^5
     babel-eslint: ^10.1.0
+    bfx-api-node-models: ^1.5.0
     bitfinex-api-node: ^5.0.2
     bluebird: ^3.7.2
     chai: ^4.3.4
@@ -7704,6 +7753,7 @@ __metadata:
     mocha: ^9.1.1
     nyc: ^15.1.0
     p-iteration: ^1.1.8
+    request-promise: ^4.2.6
     signale: ^1.4.0
     sinon: ^11.1.2
     sqlite: ^4.0.23

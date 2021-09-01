@@ -4,6 +4,7 @@
     "url": "https://github.com/ph3rnol/vw-crypto-stats/issues"
   },
   "dependencies": {
+    "bfx-api-node-models": "^1.5.0",
     "bitfinex-api-node": "^5.0.2",
     "bluebird": "^3.7.2",
     "colors": "^1.4.0",
@@ -11,6 +12,7 @@
     "dotenv": "^10.0.0",
     "lodash": "^4.17.21",
     "p-iteration": "^1.1.8",
+    "request-promise": "^4.2.6",
     "signale": "^1.4.0",
     "sqlite": "^4.0.23",
     "sqlite3": "^5.0.2",
@@ -19,6 +21,7 @@
   "description": "Vodworks Crypto Market Monitor",
   "devDependencies": {
     "@types/bluebird": "^3",
+    "@types/request-promise": "^4",
     "@types/signale": "^1",
     "@types/update-notifier": "^5",
     "babel-eslint": "^10.1.0",
